@@ -1,0 +1,3 @@
+[core]
+    excludesfile=E:/mygit/Java.gitignore
+/target/
