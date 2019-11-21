@@ -8,7 +8,7 @@ import spring.annotation.aop.LogAspects;
 import spring.annotation.aop.MathCalculator;
 /**
  * AOP：【动态代理】
- *    指在程序运行期间动态的将某段代码切入到指定方法指定位置进行运行的变成方式
+ *    指在程序运行期间动态的将某段代码切入到指定方法指定位置进行运行的编程方式
  *    
  * 1、导入aop模块（spring-aspects）
  * 2、定义一个业务逻辑类
@@ -18,7 +18,9 @@ import spring.annotation.aop.MathCalculator;
  *            后置通知(@After)：在目标方法运行之后运行(无论方法正常结束还是异常结束)
  *            返回通知(@AfterReturning)：在目标方法正常返回之后运行
  *            异常通知(@AfterThrowing)：在目标方法运行异常之后运行
- *            环绕通知(@Around)：动态代理，手动推进目标方法运行（joinPoint.procced()）
+ *            环绕通知(@Around)：动态代理，手动推进目标方法运行（ProceedingJoinPoint.procced()）
+ *                            目标方法执行之前和之后都可以执行
+ *                            ProceedingJoinPoint-连接点对象：封装了(特定)具体业务的方法信息
  *4、给切面类的目标方法标注何时何地运行（通知方法注解）
  *5、将切面类和业务逻辑类都加到容器中
  *6、必须告诉spring哪个类是切面类@Aspect
