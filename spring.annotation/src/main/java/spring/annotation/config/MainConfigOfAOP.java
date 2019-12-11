@@ -136,7 +136,7 @@ import spring.annotation.aop.MathCalculator;
  *     2、finishBeanFactoryInitialization()初始化剩下的实例bean
  *        创建业务逻辑类和切面类
  *        AnnotationAwareAspectJAutoProxyCreator拦截组件创建过程
- *        组件创建完成后，判断时候需要增强
+ *        组件创建完成后，判断是否需要增强
  *          是：切面的通知方法，包装成增强器，给业务逻辑创建一个代理对象
  *     3、执行目标方法：
  *        1）代理对象执行目标方法

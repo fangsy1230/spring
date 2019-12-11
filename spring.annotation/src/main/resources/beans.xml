@@ -12,5 +12,8 @@
          <property name="name" value="zhansan"></property>
          <property name="age" value="18"></property>
     </bean>
+    
+   <!-- 开启基于事务的注解 --> 
+    <!-- <tx:annotation-driven transaction-manager="txManager" /> -->
   
 </beans>
